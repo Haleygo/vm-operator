@@ -14,7 +14,7 @@ spec:
   scope: Namespaced
   versions:
   - additionalPrinterColumns:
-    - description: current number of shards
+    - description: current number ofshards
       jsonPath: .status.shards
       name: Shards Count
       type: integer
