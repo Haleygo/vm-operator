@@ -1,4 +1,4 @@
-name: Update crds for charts
+name: Update CRDs for chart repo
 
 on:
   push:
