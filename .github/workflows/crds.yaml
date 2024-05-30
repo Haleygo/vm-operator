@@ -11,7 +11,7 @@ jobs:
   update-crds:
     runs-on: ubuntu-latest
     environment:
-      name: crds
+      name: docs
     steps:
       - name: Check out operator code
         uses: actions/checkout@v4
