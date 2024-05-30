@@ -5,7 +5,7 @@ on:
     branches:
       - master
     paths:
-      - "config/crd/bases"
+      - "config/crd/bases/**"
 
 jobs:
   update-crds:
