@@ -14,7 +14,7 @@ spec:
   scope: Namespaced
   versions:
   - additionalPrinterColumns:
-    - description: current number ofshards
+    - description: current number of shards
       jsonPath: .status.shards
       name: Shards Count
       type: integer
@@ -30,7 +30,7 @@ spec:
     schema:
       openAPIV3Schema:
         description: |-
-          VMAgent - is arics from various sources and stores them in VictoriaMetrics
+          VMAgent - is a tiny but brave agent, which helps you collect metrics from various sources and stores them in VictoriaMetrics
           or any other Prometheus-compatible storage system that supports the remote_write protocol.
         properties:
           apiVersion:
