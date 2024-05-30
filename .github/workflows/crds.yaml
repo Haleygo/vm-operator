@@ -5,7 +5,7 @@ on:
     branches:
       - master
     paths:
-      - "config/crd/bases/**"
+      - "config/crd/bases/*.yaml"
 
 jobs:
   update-crds:
@@ -46,7 +46,7 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          export VM_GIT_BRANCH_NAME="operator-docs-update-$(date +%s)"
+          export VM_GIT_BRANCH_NAME="operator-crds-update-$(date +%s)"
           export VM_GIT_COMMIT_SHA="$(git rev-parse --short $GITHUB_SHA)"
           git checkout -b "${VM_GIT_BRANCH_NAME}"
           git add charts/victoria-metrics-operator/crd.yaml
